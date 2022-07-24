@@ -14,5 +14,5 @@ lint:
 
 bundle: all
 	mkdir -p build
-	zip -r build/$(NAME).zip *.php *.txt src templates assets
+	zip -r build/$(NAME).zip *.php *.txt src templates assets -x "**/.DS_Store"
 .PHONY: bundle
