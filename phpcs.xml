@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<ruleset name="Mindspun">
+    <description>Mindspun WordPress Coding Standards</description>
+
+    <file>wall.php</file>
+    <file>src</file>
+    <file>templates</file>
+
+    <arg name="extensions" value="php"/>
+    <arg value="-colors"/>
+    <arg value="ns"/>
+
+    <rule ref="WordPress-Extra">
+        <exclude name="WordPress.Files.FileName.NotHyphenatedLowercase"/>
+        <exclude name="WordPress.Files.FileName.InvalidClassFileName"/>
+        <exclude name="WordPress.PHP.DisallowShortTernary"/>
+        <exclude name="Generic.WhiteSpace.DisallowSpaceIndent"/>
+        <exclude name="Squiz.Commenting.FileComment.MissingPackageTag"/>
+        <exclude name="Squiz.Commenting.FunctionComment.MissingParamTag"/>
+        <exclude name="Squiz.Commenting.FileComment.Missing"/>
+    </rule>
+
+    <rule ref="WordPress-Docs"/>>
+
+    <rule ref="Generic.CodeAnalysis.UnusedFunctionParameter"/>
+    <rule ref="Generic.Commenting.Todo"/>
+
+    <!-- Use 4 spaces -->
+    <rule ref="Generic.WhiteSpace.ScopeIndent">
+        <properties>
+            <property name="indent" value="4"/>
+            <property name="tabIndent" value="false"/>
+        </properties>
+    </rule>
+    <rule ref="Generic.WhiteSpace.DisallowTabIndent" />
+
+    <config name="minimum_supported_wp_version" value="6.0"/>
+</ruleset>

@@ -1,0 +1,32 @@
+.spn-page {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .spn-container {
+    text-align: center;
+    display: inline-block;
+    padding: 1em;
+  }
+
+  .spn-button {
+    text-align: center;
+    position: fixed;
+    left: 1em;
+    right: 1em;
+    bottom: 1em;
+  }
+}
+
+@media (min-width: 480px) {
+  .spn-page .spn-button {
+    left: initial;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+}
