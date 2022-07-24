@@ -5,7 +5,6 @@
  * Description: Lightweight plugin to make your site private.
  * Version: 0.1.0
  * Author: Mindspun
- * Author URI: https://www.mindspun.com
  * License: GNU Version 2 or Any Later Version
  */
 

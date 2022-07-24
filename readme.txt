@@ -1,5 +1,4 @@
 === Wall ===
-Author URI: https://www.mindspun.com
 Plugin URI: https://www.mindspun.com
 Contributors: mindspun, mattlaue
 Donate link: https://www.mindspun.com.com/donate/
