@@ -8,7 +8,6 @@ namespace mindspun\wall;
  */
 class Wall {
 
-
     const TEMPLATE_DIR = 'spn_templates';
 
     /**
@@ -89,7 +88,7 @@ class Wall {
      */
     public function action() {
         if ( ! is_user_logged_in() && $this->plugin->settings->enabled ) {
-            $secret = $_SERVER['HTTP_X_SECRET'] ?? null;
+            $secret = sanitize_text_field( $_SERVER['HTTP_X_SECRET'] ?? null );
             if ( $secret && $secret === $this->plugin->settings->secret ) {
                 return;
             }
@@ -125,7 +124,7 @@ class Wall {
      */
     public function template_include( string $template ): string {
         if ( ! is_user_logged_in() && $this->plugin->settings->enabled ) {
-            $secret = $_SERVER['HTTP_X_SECRET'] ?? null;
+            $secret = sanitize_text_field( $_SERVER['HTTP_X_SECRET'] ?? null );
             if ( $secret && $secret === $this->plugin->settings->secret ) {
                 return $template;
             }
