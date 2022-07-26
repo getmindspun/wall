@@ -24,7 +24,7 @@ class SecretField extends Field {
      * Validation (always true).
      */
     public function validate( &$data ) {
-        $data[ $this->name ] = $data[ $this->name ] ?: null;
+        $data[ $this->name ] = sanitize_text_field( $data[ $this->name ] ?: null );
     }
 
     /**
