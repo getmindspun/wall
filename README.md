@@ -24,3 +24,10 @@ Verify with:
 ```shell
 ./vendor/bin/phpcs -i
 ```
+
+### SVN
+```shell
+cd svn/assets
+svn propset svn:mime-type image/png *.png
+svn propset svn:mime-type image/jpeg *.jpg
+```

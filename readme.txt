@@ -5,7 +5,7 @@ Donate link: https://www.mindspun.com.com/donate/
 Tags: private, login, visibility
 Requires at least: 5.7
 Tested up to: 6.0.1
-Requires PHP: 5.6
+Requires PHP: 7.2
 Stable Tag: 0.1.0
 License: GNU Version 2 or Any Later Version
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -33,6 +33,7 @@ your users on any non-login page.
 The landing page will use your theme styles by default, but you can easily customize the page to anything you wish.
 
 In your theme:
+
 * Create a directory in your theme named **spn_templates**.
 * Copy **wall-landing-page.php** from the 'templates' directory of this plugin (or create your own) into the 'spn_templates' directory of you theme.
 
